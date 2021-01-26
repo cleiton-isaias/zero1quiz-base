@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import { delBasePath } from "next/dist/next-server/lib/router/router";
 
 export default function Heads() {
   return (
@@ -17,7 +18,7 @@ export default function Heads() {
         content="Website constrido para apraender e se divertir - Imersão Alura"
       ></meta>
       <meta property="og:type" content="website"></meta>
-      <meta property="og:image" content="../public/imagens/link.png"></meta>
+      <meta property="og:image" content={window.location.href+db.bg}></meta>
     </Head>
   );
 }
