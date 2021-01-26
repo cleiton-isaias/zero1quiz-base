@@ -1,5 +1,5 @@
 import styled from "styled-components";
-/* import Heads from '../src/components/Heads'; */
+import Heads from '../src/components/Heads';
 import db from "../db.json";
 import Widget from "../src/components/Widget";
 import Logo from "../src/components/Logo";
@@ -38,20 +38,12 @@ export const QuizContainer = styled.div`
 `;
 
 
+
 export default function Home() {
-  return(   
-        
+  return( 
+    <>
+    <Heads></Heads>
     <QuizBackground backgroundImage={db.bg}>
-      <Head>
-        <title>Zero 1 Quiz</title>
-        <meta property="og:locale" content="pt_BR"></meta>
-        <meta property="og:url" content="https://zero1quiz-base-git-master.cleiton-isaias.vercel.app/"></meta>
-        <meta property="og:title" content="Zero 1 Quiz"></meta>
-        <meta property="og:site_name" content="Zero 1 Quiz"></meta>
-        <meta property="og:description" content="Website constrido para apraender e se divertir - Imersão Alura"></meta>
-        <meta property="og:type" content="website"></meta>
-        <meta property="og:image" content={db.bg}></meta>
-    </Head> 
       <QuizContainer>
       <Logo></Logo>
         <Widget>
@@ -78,5 +70,6 @@ export default function Home() {
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/cleiton-isaias" />
     </QuizBackground>
-  );
+    </>
+  )
 }
