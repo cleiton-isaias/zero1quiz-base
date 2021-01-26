@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Heads from '../src/components/Heads';
+/* import Heads from '../src/components/Heads'; */
 import db from "../db.json";
 import Widget from "../src/components/Widget";
 import Logo from "../src/components/Logo";
@@ -42,7 +42,7 @@ export const QuizContainer = styled.div`
 export default function Home() {
   return( 
     <>
-    <Heads/>
+    {/* <Heads/> */}
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
       <Logo></Logo>

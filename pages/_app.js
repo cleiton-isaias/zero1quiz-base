@@ -1,4 +1,5 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import Head from 'next/head';
 import db from '../db.json';
 
 const GlobalStyle = createGlobalStyle`
@@ -35,7 +36,25 @@ const theme = db.theme;
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
+  <>
+    <Head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+    <title>Zero 1 Quiz</title>
+      <meta property="og:locale" content="pt_BR"></meta>
+      <meta
+        property="og:url"
+        content="https://zero1quiz-base-git-master.cleiton-isaias.vercel.app/"
+      ></meta>
+      <meta property="og:title" content="Zero 1 Quiz"></meta>
+      <meta property="og:site_name" content="Zero 1 Quiz"></meta>
+      <meta
+        property="og:description"
+        content="Website constrido para apraender e se divertir - Imersão Alura"
+      ></meta>
+      <meta property="og:type" content="website"></meta>
+      <meta property="og:image" content="../public/imagens/link.png"></meta>
+    </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Component {...pageProps} />
