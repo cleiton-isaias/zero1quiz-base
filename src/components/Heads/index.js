@@ -11,7 +11,7 @@ export default function Heads() {
         <meta property="og:site_name" content="Zero 1 Quiz"></meta>
         <meta property="og:description" content="Website constrido para apraender e se divertir - Imersão Alura"></meta>
         <meta property="og:type" content="website"></meta>
-        <meta property="og:image" content="../../imagens/link.png"></meta>
+        <meta property="og:image" content="../public/imagens/link.png"></meta>
 </Head> 
 
     );
