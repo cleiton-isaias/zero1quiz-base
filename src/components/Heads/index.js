@@ -11,8 +11,7 @@ export default function Heads() {
         <meta property="og:site_name" content="Zero 1 Quiz"></meta>
         <meta property="og:description" content="Website constrido para apraender e se divertir - Imersão Alura"></meta>
         <meta property="og:type" content="website"></meta>
-        <meta property="og:image" content="https://store.nintendo.com.br/media/catalog/product/cache/1aff59ff6f21b2058ac5563c018426d7/z/e/zeldalinksawakening-swbanner-v2-1920x1080.jpg"></meta>
-        
+        <meta property="og:image" content="../../imagens/link.png"></meta>
 </Head> 
 
     );
