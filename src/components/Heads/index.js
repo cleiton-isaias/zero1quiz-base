@@ -4,7 +4,7 @@ import Head from 'next/head';
 export default function Heads() {
     return (
 <Head>
-              {/* <!-- Primary Meta Tags --> */}
+        {/* <!-- Primary Meta Tags --> */}
         <title>Zero 1 Quiz</title>
         <meta name="Zero 1 Quiz" content="Zero 1 Quiz"/>
         <meta name="Zero 1 Quiz" content="Quiz para Testar seus conhecimentos sobre Zelda!"/>
@@ -14,14 +14,15 @@ export default function Heads() {
         <meta property="og:url" content="https://metatags.io/"/>
         <meta property="og:title" content="The legend of Zelda"/>
         <meta property="og:description" content="Quiz para Testar seus conhecimentos sobre Zelda!"/>
-        <meta property="../imagens/link.png" content="../imagens/link.png"/>
+        <meta property="og:image" content="../imagens/link.png"/>
 
-      {/*   <!-- Twitter --> */}
+        {/*   <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image"/>
         <meta property="twitter:url" content="https://metatags.io/"/>
         <meta property="twitter:title" content="The legend of Zelda"/>
         <meta property="twitter:description" content="Quiz para Testar seus conhecimentos sobre Zelda!"/>
-        <meta property="../imagens/link.png" content="../imagens/link.png"/>
-      </Head> 
+        <meta property="twitter:image" content="../imagens/link.png"/>
+</Head> 
     );
+    "../imagens/link.png"
 }   
